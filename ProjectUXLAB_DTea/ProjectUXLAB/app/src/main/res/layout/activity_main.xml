@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f3f3"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/topImageHome"
+        android:layout_width="391dp"
+        android:layout_height="238dp"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/top" />
+
+    <TextView
+        android:id="@+id/welcomeTextHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/josefinsans"
+        android:text="Welcome to RAiso,"
+        android:textColor="@color/main_green"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="340dp"
+        android:fontFamily="@font/josefinsans"
+        android:text="email@email.com"
+        android:textColor="@color/ac_green"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/promoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="400dp"
+        android:fontFamily="@font/josefinsans"
+        android:text="Explore our products in\nItems page below!"
+        android:textColor="@color/ac_green"
+
+        android:textSize="20sp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+
+</RelativeLayout>

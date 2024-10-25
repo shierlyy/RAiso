@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ProjectUXLAB" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_pink</item>
+        <item name="colorPrimaryVariant">@color/main_pink</item>
+        <item name="colorOnPrimary">@color/n_light</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/main_green</item>
+        <item name="colorSecondaryVariant">@color/main_green</item>
+        <item name="colorOnSecondary">@color/n_dark</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="SlideActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    </style>
+</resources>

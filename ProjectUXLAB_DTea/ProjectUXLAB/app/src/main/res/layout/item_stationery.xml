@@ -1,0 +1,44 @@
+<!-- item_stationery.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewStationery"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/popuppencilcase" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:fontFamily="@font/josefinsans"
+            android:textColor="@color/n_dark"
+            android:id="@+id/textViewStationeryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Stationery Name" />
+
+        <TextView
+            android:fontFamily="@font/josefinsans"
+            android:textColor="@color/ac_brown"
+            android:id="@+id/textViewStationeryPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Price" />
+
+    </LinearLayout>
+
+</LinearLayout>

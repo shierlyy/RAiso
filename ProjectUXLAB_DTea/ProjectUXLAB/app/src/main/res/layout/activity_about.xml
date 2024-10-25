@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:background="@color/n_light">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="391dp"
+        android:layout_height="238dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/top" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_below="@id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RAiso"
+        android:fontFamily="@font/josefinsans"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/main_green"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_below="@id/name"
+        android:layout_marginTop="40dp"
+        android:layout_width="339dp"
+        android:layout_height="260dp"
+        android:backgroundTint="@color/n_light"
+        app:cardCornerRadius="15dp">
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Company Address"
+            android:textStyle="bold"
+            android:fontFamily="@font/josefinsans"
+            android:textColor="@color/n_dark"/>
+
+        <TextView
+            android:id="@+id/address2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:text="123 Paper Street,Suite 456,Penville, CA 90210, USA"
+            android:textSize="12sp"
+            android:fontFamily="@font/josefinsans"
+            android:textColor="@color/n_dark"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="85dp"
+            android:text="Company Phone"
+            android:textStyle="bold"
+            android:fontFamily="@font/josefinsans"
+            android:textColor="@color/n_dark"/>
+
+        <TextView
+            android:id="@+id/phone2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="110dp"
+            android:text="087886199710"
+            android:textSize="12sp"
+            android:fontFamily="@font/josefinsans"
+            android:textColor="@color/n_dark"/>
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:text="App version"
+            android:textStyle="bold"
+            android:fontFamily="@font/josefinsans"
+            android:textColor="@color/n_dark"/>
+
+        <TextView
+            android:id="@+id/version2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="175dp"
+            android:text="V1.1"
+            android:textSize="12sp"
+            android:fontFamily="@font/josefinsans"
+            android:textColor="@color/n_dark"/>
+
+
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNavigationView"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="2dp"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"/>
+
+</RelativeLayout>
